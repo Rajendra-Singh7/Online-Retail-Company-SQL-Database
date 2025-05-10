@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project simulates the core database operations of a fictional online retail company using SQL Server. It demonstrates relational database design, data insertion, reporting and analytics queries, triggers for logging changes, and performance optimization through indexes. The project is ideal for showcasing SQL skills in a data analyst portfolio.
+This project simulates the core database operations of a fictional online retail company using SQL Server. It demonstrates relational database design, data insertion, reporting and analytics queries, triggers for logging changes, and performance optimization through indexes. The project showcases my skills in SQL, including database development, querying, and optimization, as part of my data analyst portfolio.
 
 ---
 
@@ -100,14 +100,6 @@ cd Online-Retail-Company-SQL-Database
 
 - SQL Server (2016 or later recommended)
 - SQL Server Management Studio (SSMS) or compatible client
-
----
-
-## How to Use This Project in Your Portfolio
-
-- Demonstrates end-to-end SQL skills: schema design, data loading, reporting, analytics, triggers, and optimization.
-- Well-documented and modular, making it easy to showcase or extend.
-- Use screenshots or sample outputs from your queries in your portfolio or resume.
 
 ---
 
