@@ -32,8 +32,7 @@ Online-Retail-Company-SQL-Database/
 │   ├── reporting_queries.sql       # Standard business/reporting queries
 │   └── analysis_queries.sql        # Deeper analysis/insight queries
 ├── triggers/
-│   └── triggers_and_logging.sql    # Triggers for logging changes
-└── LICENSE
+    └── triggers_and_logging.sql    # Triggers for logging changes
 ```
 
 ---
