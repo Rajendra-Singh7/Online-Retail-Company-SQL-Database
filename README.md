@@ -1,114 +1,133 @@
-# Online Retail Database (SQL Server Project)
+# 🛒 Fictional Online Retail Company – SQL Data Analytics Project
 
-## Overview
+## 📌 Objective
 
-This project simulates the core database operations of a fictional online retail company using SQL Server. It demonstrates relational database design, data insertion, reporting and analytics queries, triggers for logging changes, and performance optimization through indexes. The project showcases my skills in SQL, including database development, querying, and optimization, as part of my data analyst portfolio.
-
----
-
-## Features
-
-- **Database Design:** Normalized schema for Customers, Products, Orders, OrderItems, and Categories.
-- **Sample Data:** Realistic sample data for all tables to enable meaningful analysis.
-- **Business Queries:** 20+ reporting and analysis queries, including aggregations, joins, CTEs, and subqueries.
-- **Triggers & Logging:** Automated logging of data changes (INSERT, UPDATE, DELETE) on key tables.
-- **Indexes:** Performance optimization with clustered and non-clustered indexes.
-- **Modular Scripts:** Well-organized, reusable scripts for each step.
+To design and implement a robust SQL Server database for an online retail business, enabling efficient storage, reporting, and advanced analysis of customer, product, and sales data. The project demonstrates end-to-end skills in database design, data population, business intelligence, and performance optimization.
 
 ---
 
-## Project Structure
+## 🧑‍💼 User Stories
+
+| # | Role                | Request                                  | Value                                    | Acceptance Criteria                   |
+|---|---------------------|------------------------------------------|------------------------------------------|---------------------------------------|
+| 1 | Data Analyst        | Generate sales and customer reports       | Track business performance               | Ready-to-use SQL reporting queries    |
+| 2 | Business Manager    | Identify top customers and products       | Target marketing and inventory decisions | Analysis queries and summary reports  |
+| 3 | Operations Manager  | Log and audit data changes               | Ensure data integrity and traceability   | Automated triggers & change logs      |
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **SQL Server:** Database creation, data modeling, and querying
+- **T-SQL:** Advanced queries, CTEs, subqueries, and window functions
+- **SSMS:** Database management and script execution
+
+---
+
+## 🚀 Project Structure
 
 ```
 Online-Retail-Company-SQL-Database/
 ├── README.md
 ├── schema/
-│   ├── create_database.sql         # Create the database
-│   ├── create_tables.sql           # Create all tables (including ChangeLog)
-│   ├── insert_sample_data.sql      # Populate tables with sample data
-│   ├── create_views.sql            # (Optional) Create useful SQL views
-│   └── create_indexes.sql          # Create indexes for optimization
+│   ├── create_database.sql
+│   ├── create_tables.sql
+│   ├── insert_sample_data.sql
+│   └── create_indexes.sql
 ├── queries/
-│   ├── reporting_queries.sql       # Standard business/reporting queries
-│   └── analysis_queries.sql        # Deeper analysis/insight queries
+│   ├── reporting_queries.sql
+│   └── analysis_queries.sql
 ├── triggers/
-    └── triggers_and_logging.sql    # Triggers for logging changes
+    └── triggers_and_logging.sql
 ```
 
 ---
 
-## Getting Started
+## 🔍 Key Insights
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/Rajendra-Singh7/Online-Retail-Company-SQL-Database.git
-cd Online-Retail-Company-SQL-Database
-```
-
-### 2. Set Up the Database
-
-1. Open SQL Server Management Studio (SSMS) or your preferred SQL client.
-2. Run the scripts in the following order:
-   - `schema/create_database.sql`
-   - `schema/create_tables.sql`
-   - `schema/insert_sample_data.sql`
-   - `schema/create_views.sql` 
-   - `schema/create_indexes.sql`
-   - `triggers/triggers_and_logging.sql`
-
-### 3. Explore the Data
-
-- Use the queries in `queries/reporting_queries.sql` and `queries/analysis_queries.sql` to explore and analyze the data.
+- **Top Customers & Products:** Identify the highest spenders and best-selling items
+- **Monthly Sales Trends:** Track sales and order volumes over time
+- **Stock & Inventory:** Instantly find out-of-stock products
+- **Customer Segmentation:** Analyze customer distribution by country and order activity
+- **Change Logging:** Audit all changes to customer and product data for compliance
 
 ---
 
-## Example Queries
+## 📊 Example Queries
 
 **Reporting Queries:**
-- Total sales for each product
+- Total sales by product
 - Average order value
 - Orders per month
-- Customers by country
 - Out-of-stock products
+- Customers by country
 
 **Analysis Queries:**
 - Top 5 customers by spending
 - Most popular product category
 - Customers who never placed an order
-- Top 3 most frequently ordered products
-- Orders with more than a specified number of items
+- Highest-priced product per category
+- Orders with more than N items
 
 ---
 
-## Logging & Triggers
+## ✅ Recommendations
 
-- All INSERT, UPDATE, and DELETE operations on `Products` and `Customers` are automatically logged in the `ChangeLog` table via triggers.
-- The `ChangeLog` table records the table name, operation, record ID, timestamp, and user.
-
----
-
-## Indexing
-
-- Clustered indexes are created automatically on primary keys.
-- Additional non-clustered indexes are provided on commonly queried columns (e.g., `Email`, `Country`, `CategoryID`, `OrderDate`) to improve query performance.
+- Use reporting queries for regular business performance tracking.
+- Apply analysis queries for strategic decision-making and deeper business insights.
+- Review the `ChangeLog` table for a full audit trail of key data changes.
 
 ---
 
-## Requirements
+## 🧠 Project Takeaways
 
-- SQL Server (2016 or later recommended)
-- SQL Server Management Studio (SSMS) or compatible client
+- Designed a normalized, scalable retail database schema
+- Populated tables with realistic sample data
+- Wrote 20+ business and analysis queries using T-SQL
+- Implemented audit triggers for data change tracking
+- Added indexes for performance optimization
+- Organized scripts for easy setup and reproducibility
+
+---
+
+## 👨‍💻 About Me
+
+I'm Rajendra Singh, a Computer Science graduate with over one year of experience in data analytics. This project showcases my skills in SQL, data modeling, and business intelligence, reflecting my strong interest in data analytics and database engineering.
+
+- 🌐 Portfolio: [https://rajendra-singh7.github.io/]
+- 🔗 LinkedIn: [https://linkedin.com/in/rajendra-singh-shah]
+- 📬 Email: [rajendrasinghshah25@gmail.com]
 
 ---
 
-## Contributing
+## 📎 Project Deliverables
 
-Contributions and suggestions are welcome! Please open an issue or submit a pull request.
-
-
-## Author
-
-- [Your Name](https://github.com/Rajendra-Singh7)
+✔️ SQL scripts for database creation, data insertion, and indexing  
+✔️ Ready-to-use reporting and analysis queries  
+✔️ Triggers and logging for data changes  
+✔️ Example outputs and usage instructions
 
 ---
+
+## Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Rajendra-Singh7/Online-Retail-Company-SQL-Database.git
+   cd Online-Retail-Company-SQL-Database
+   ```
+2. **Run the scripts in order:**
+   - `schema/create_database.sql`
+   - `schema/create_tables.sql`
+   - `schema/insert_sample_data.sql`
+   - `schema/create_indexes.sql`
+   - `triggers/triggers_and_logging.sql`
+3. **Explore the queries in `/queries` for insights and reporting.**
+
+---
+
+## License
+
+[MIT License](./LICENSE)
+
+
