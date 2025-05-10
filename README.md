@@ -126,8 +126,5 @@ I'm Rajendra Singh, a Computer Science graduate with over one year of experience
 
 ---
 
-## License
-
-[MIT License](./LICENSE)
 
 
